@@ -718,10 +718,10 @@
                         <div class="col-lg-8">
                             <div class="contact-form text-center">
                                 <div id="success"></div>
-                                <form name="contact" method="POST" netlify netlify-honeypot="bot-field"
-                                    id="contactForm" action="/gracias.html">
+                                <form name="contact" method="POST" netlify netlify-honeypot="bot-field" id="contactForm"
+                                    action="/gracias.html">
                                     <!-- Campo oculto antispam -->
-                                    <input type="d-none" name="form-name" value="contact" />
+                                    <input type="hidden" name="form-name" value="contact" />
                                     <p class="d-none">
                                         <label>No llenar: <input name="bot-field" /></label>
                                     </p>
@@ -740,12 +740,13 @@
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <select name="subject" id="subject" class="form-control p-4" required>
+                                        <select name="subject" id="subject" class="form-control custom-select-rounded"
+                                            required>
                                             <option value="" disabled>Seleccioná un servicio</option>
-                                            <option value="Redaccion y correccion">Redaccion y correccion</option>
+                                            <option value="Redaccion y correccion">Redacción y corrección</option>
                                             <option value="Editorial y publicaciones">Editorial y publicaciones</option>
-                                            <option value="Comunicacion y medios">Comunicacion y medios</option>
-                                            <option value="Mediacion linguistica y cultural">Mediacion linguistica y
+                                            <option value="Comunicacion y medios">Comunicación y medios</option>
+                                            <option value="Mediacion linguistica y cultural">Mediación lingüística y
                                                 cultural</option>
                                         </select>
                                         <p class="help-block text-danger"></p>
@@ -771,32 +772,25 @@
             <!-- Contact End -->
 
             <!-- Footer Start -->
-            <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-                <div class="container text-center py-5">
-                    <div class="d-flex justify-content-center mb-4">
-                        <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+            <div class="container-fluid bg-primary text-white py-5 px-3">
+                <div class="text-center">
+                    <div class="mb-4">
+                        <a class="btn btn-light btn-social" href="https://www.linkedin.com/in/luc%C3%ADa-kramer-3b842150/"
+                            target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </div>
-                    <div class="d-flex justify-content-center mb-3">
-                        <a class="text-white" href="#">Privacy</a>
-                        <span class="px-3">|</span>
-                        <a class="text-white" href="#">Terms</a>
-                        <span class="px-3">|</span>
-                        <a class="text-white" href="#">FAQs</a>
-                        <span class="px-3">|</span>
-                        <a class="text-white" href="#">Help</a>
-                    </div>
-                    <p class="m-0">
-                        &copy;
-                        <a class="text-white font-weight-bold" href="#">Lucía Kramer</a>.
-                        Todos los derechos reservados. Diseño por
-                        <a class="text-white font-weight-bold" href="">Agustina Kramer</a>
+                    <p class="mb-1">
+                        &copy; <strong>Lucía Kramer</strong>. Todos los derechos reservados.
+                    </p>
+                    <p class="mb-0">
+                        Diseño por <strong>Agustina Kramer</strong>
                     </p>
                 </div>
             </div>
             <!-- Footer End -->
+
+
 
             <!-- Scroll to Bottom -->
             <a href="#about" class="scroll-to-bottom"><i class="fa fa-2x fa-angle-down text-white"></i></a>
