@@ -29,12 +29,12 @@ $mail = new PHPMailer(true);
 try {
     // Configuración del servidor SMTP de Gmail
     $mail->isSMTP();
-    $mail->Host       = 'smtp.gmail.com';
-    $mail->SMTPAuth   = true;
-    $mail->Username   = 'agustinakramer@gmail.com'; // TU Gmail
-    $mail->Password   = 'dxhl oimu ugaa nnxe'; // Contraseña de app
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = 587;
+    $mail->Host = $_ENV['MAIL_HOST'];
+    $mail->SMTPAuth = true;
+    $mail->Username = $_ENV['MAIL_USERNAME'];
+    $mail->Password = $_ENV['MAIL_PASSWORD'];
+    $mail->SMTPSecure = $_ENV['MAIL_ENCRYPTION'];
+    $mail->Port = $_ENV['MAIL_PORT'];
 
     // Datos del formulario
     $name = strip_tags($_POST['name']);
@@ -43,8 +43,8 @@ try {
     $message = strip_tags($_POST['message']);
 
     // Remitente y destinatario
-    $mail->setFrom($email, $name);
-    $mail->addAddress('luchykramer@gmail.com'); // Tu destino
+    $mail->setFrom($_ENV['MAIL_USERNAME'], 'Formulario web');
+    $mail->addAddress($_ENV['MAIL_TO']);
 
     // Contenido del correo
     $mail->isHTML(false);
