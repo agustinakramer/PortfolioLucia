@@ -372,8 +372,8 @@
                         Corrección ortotipográfica y de estilo. Redacción de textos académicos, blogs y editoriales.
                         Revisión de tesis, ensayos y más.
                     </p>
-                    <a href="#contact" class="btn btn-outline-primary mt-auto"
-                        data-servicio="Redacción y corrección">Contactame</a>
+                    <a href="#contact" class="btn btn-outline-primary mt-auto cta-servicio"
+                        data-servicio="Redaccion y correccion">Contactame</a>
                 </div>
             </div>
 
@@ -389,7 +389,7 @@
                         Asesoramiento literario, edición, corrección y traducción de textos. Apoyo en procesos
                         editoriales y publicación.
                     </p>
-                    <a href="#contact" class="btn btn-outline-primary mt-auto"
+                    <a href="#contact" class="btn btn-outline-primary mt-auto cta-servicio"
                         data-servicio="Editorial y publicaciones">Contactame</a>
                 </div>
             </div>
@@ -406,8 +406,8 @@
                         Guiones para medios, asesoría en redacción profesional y contenidos digitales. Difusión cultural
                         en diversos formatos.
                     </p>
-                    <a href="#contact" class="btn btn-outline-primary mt-auto"
-                        data-servicio="Comunicación y medios">Contactame</a>
+                    <a href="#contact" class="btn btn-outline-primary mt-auto cta-servicio"
+                        data-servicio="Comunicacion y medios">Contactame</a>
                 </div>
             </div>
 
@@ -423,8 +423,8 @@
                         Investigación en lingüística y literatura. Diseño curricular y planificación didáctica para
                         instituciones y editoriales.
                     </p>
-                    <a href="#contact" class="btn btn-outline-primary mt-auto"
-                        data-servicio="Mediación lingüística y cultural">Contactame</a>
+                    <a href="#contact" class="btn btn-outline-primary mt-auto cta-servicio"
+                        data-servicio="Mediacion linguistica y cultural">Contactame</a>
                 </div>
             </div>
         </div>
@@ -721,8 +721,8 @@
                                 <form name="contact" method="POST" netlify netlify-honeypot="bot-field"
                                     id="contactForm" action="/gracias.html">
                                     <!-- Campo oculto antispam -->
-                                    <input type="hidden" name="form-name" value="contact" />
-                                    <p class="hidden">
+                                    <input type="d-none" name="form-name" value="contact" />
+                                    <p class="d-none">
                                         <label>No llenar: <input name="bot-field" /></label>
                                     </p>
                                     <div class="form-row">
@@ -740,13 +740,12 @@
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <select class="form-control p-4" id="subject" name="subject" required
-                                            data-validation-required-message="Por favor selecciona un servicio">
-                                            <option value="" disabled selected>Seleccioná un servicio</option>
-                                            <option value="Redacción y corrección">Redacción y corrección</option>
+                                        <select name="subject" id="subject" class="form-control p-4" required>
+                                            <option value="" disabled>Seleccioná un servicio</option>
+                                            <option value="Redaccion y correccion">Redaccion y correccion</option>
                                             <option value="Editorial y publicaciones">Editorial y publicaciones</option>
-                                            <option value="Comunicación y medios">Comunicación y medios</option>
-                                            <option value="Mediación lingüística y cultural">Mediación lingüística y
+                                            <option value="Comunicacion y medios">Comunicacion y medios</option>
+                                            <option value="Mediacion linguistica y cultural">Mediacion linguistica y
                                                 cultural</option>
                                         </select>
                                         <p class="help-block text-danger"></p>
@@ -815,7 +814,6 @@
             <script src="freelancer-portfolio-template/lib/lightbox/js/lightbox.min.js"></script>
 
             <!-- Contact Javascript File -->
-            <script src="freelancer-portfolio-template/mail/jqBootstrapValidation.min.js"></script>
             <script src="freelancer-portfolio-template/mail/contact.js"></script>
 
             <!-- Template Javascript -->

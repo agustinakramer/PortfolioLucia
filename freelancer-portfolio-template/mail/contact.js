@@ -5,6 +5,9 @@ $('#name').focus(function () {
 
 // Preseleccionar el servicio desde los botones
 $(".cta-servicio").on("click", function () {
-  const servicio = $(this).data("servicio");
-  $("#subject").val(servicio);
+    const servicio = $(this).data("servicio");
+    const $select = $("#subject");
+    $select.val(servicio);
+    $select.trigger("change"); // Forzar actualización visual
+    
 });
