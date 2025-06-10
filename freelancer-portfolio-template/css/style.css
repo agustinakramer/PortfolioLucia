@@ -9238,8 +9238,26 @@ h6,
   list-style-type: none;
 }
 
-#subject {
-  color: #212529; /* o cualquier color visible */
+/* Quitar cualquier restricción global */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Forzar el footer a ocupar 100% */
+.footer-full {
+  width: 100%;
+  background-color: #007bff; /* azul Bootstrap */
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Opcional: Centrar contenido sin limitar ancho */
+.footer-content {
+  max-width: 1140px; /* como un container grande */
+  margin: 0 auto;
 }
 
 html {
