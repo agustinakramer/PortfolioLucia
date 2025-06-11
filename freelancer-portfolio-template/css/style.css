@@ -9026,6 +9026,28 @@ h6,
   color: #495057;
 }
 
+select#subject {
+  width: 100% !important;
+  display: block;
+  border-radius: 25px;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  color: #495057;
+}
+
+@media (max-width: 576px) {
+  .custom-select-rounded {
+    border-radius: 50px;
+  }
+  select#subject {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    height: auto;
+    border: 1px solid #ced4da;
+  }
+}
 .scroll-to-bottom {
   position: fixed;
   width: 20px;
@@ -9200,6 +9222,18 @@ h6,
   left: 30px;
 }
 
+@media (max-width: 576px) {
+  #portfolio-flters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  #portfolio-flters li {
+    flex: 0 0 45%; /* dos por fila */
+    text-align: center;
+  }
+}
 .testimonial-carousel .owl-dots {
   margin-top: 25px;
   text-align: center;
@@ -9264,6 +9298,10 @@ h6,
 
 .footer-link i {
   font-size: 1rem;
+}
+
+footer .d-flex span {
+  white-space: nowrap;
 }
 
 html {
